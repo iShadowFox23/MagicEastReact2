@@ -1,0 +1,91 @@
+.categorias-section {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /* más espacio entre bloques */
+  margin: 40px auto;
+  flex-wrap: wrap;
+  /* se acomoda en móviles */
+}
+
+.shop {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 32%;
+  /* ahora cada bloque ocupa más ancho (3 bloques en una fila) */
+  min-width: 250px;
+  /* evita que se achiquen demasiado */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(48, 0, 53, 0.2);
+}
+
+.shop-img {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.shop-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.shop:hover .shop-img img {
+  transform: scale(1.1);
+}
+
+.shop-body * {
+  color: #ffffffbd !important;
+  /* fuerza que todos los hijos tomen este color */
+}
+
+.shop-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #070720a9;
+  color: rgb(255, 255, 255) !important;
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: background 0.3s ease;
+}
+
+.shop:hover .shop-body {
+  background: #070720a9;
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+  .shop {
+    width: 45%;
+    /* dos bloques por fila */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .categorias-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop {
+    width: 90%;
+    /* un bloque por fila */
+    margin-bottom: 20px;
+  }
+}

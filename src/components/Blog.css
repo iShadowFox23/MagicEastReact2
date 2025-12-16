@@ -1,0 +1,80 @@
+.blog-banner {
+  position: relative;
+  background-image: url('/images/MtgLava.jpeg');
+  background-size: cover;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/*  Efecto de fade abajo */
+.blog-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(21,22,29,0) 0%, rgba(21,22,29,1) 100%);
+  pointer-events: none;
+}
+
+.blog-section {
+  background-color: #15161d;
+  padding: 60px 0;
+}
+
+.blog-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.blog-item img {
+  width: 200px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+
+
+.blog-content {
+  flex: 1;
+}
+
+.blog-content h3 {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.blog-content h2 {
+  color: #ff5100;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .blog-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blog-item img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,528 @@
+/********** Template CSS **********/
+
+body{
+    color: #898989;
+}
+:root {
+    --primary: #8f291b;
+    --secondary: #191C24;
+    --light: #ffffff;
+    --dark: #161727;
+}
+.bootstrap-datetimepicker-widget table td.old,
+.bootstrap-datetimepicker-widget table td.new{
+    color: #ffffff;
+}
+
+.text-primary{
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.table{
+    color: #898989;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    transition: .5s;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+
+/*** Layout ***/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+    background: var(--secondary);
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.content {
+    margin-left: 250px;
+    min-height: 100vh;
+    background: var(--dark);
+    transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        margin-left: 0;
+    }
+
+    .sidebar.open {
+        margin-left: -250px;
+    }
+
+    .content {
+        width: calc(100% - 250px);
+    }
+
+    .content.open {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        margin-left: -250px;
+    }
+
+    .sidebar.open {
+        margin-left: 0;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/*** Navbar ***/
+
+
+
+.sidebar .navbar .navbar-nav .nav-link {
+    padding: 7px 20px;
+    color: var(--light);
+    font-weight: 500;
+    border-left: 3px solid var(--secondary);
+    border-radius: 0 30px 30px 0;
+    outline: none;
+}
+
+.sidebar .navbar .navbar-nav .nav-link:hover,
+.sidebar .navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+    background: var(--dark);
+    border-color: var(--primary);
+}
+
+.sidebar .navbar .navbar-nav .nav-link i {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+    border-radius: 40px;
+}
+
+.sidebar .navbar .navbar-nav .nav-link:hover i,
+.sidebar .navbar .navbar-nav .nav-link.active i {
+    background: var(--secondary);
+}
+
+.sidebar .navbar .dropdown-toggle::after {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transition: .5s;
+}
+
+.sidebar .navbar .dropdown-toggle[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+}
+
+.sidebar .navbar .dropdown-item {
+    padding-left: 25px;
+    border-radius: 0 30px 30px 0;
+    color: var(--light);
+}
+
+.sidebar .navbar .dropdown-item:hover,
+.sidebar .navbar .dropdown-item.active {
+    background: var(--dark);
+}
+.sidebar-icon-wrapper {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d6efd;
+  font-size: 18px;
+}
+
+
+.content .navbar .navbar-nav .nav-link {
+    margin-left: 25px;
+    padding: 12px 0;
+    color: var(--light);
+    outline: none;
+}
+
+.content .navbar .navbar-nav .nav-link:hover,
+.content .navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.content .navbar .sidebar-toggler,
+.content .navbar .navbar-nav .nav-link i {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+    border-radius: 40px;
+}
+
+.content .navbar .dropdown-item {
+    color: var(--light);
+}
+
+.content .navbar .dropdown-item:hover,
+.content .navbar .dropdown-item.active {
+    background: var(--dark);
+}
+
+.content .navbar .dropdown-toggle::after {
+    margin-left: 6px;
+    vertical-align: middle;
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transition: .5s;
+}
+
+.content .navbar .dropdown-toggle[aria-expanded=true]::after {
+    transform: rotate(-180deg);
+}
+
+@media (max-width: 575.98px) {
+    .content .navbar .navbar-nav .nav-link {
+        margin-left: 15px;
+    }
+}
+
+
+/*** Date Picker ***/
+.bootstrap-datetimepicker-widget.bottom {
+    top: auto !important;
+}
+
+.bootstrap-datetimepicker-widget .table * {
+    border-bottom-width: 0px;
+}
+
+.bootstrap-datetimepicker-widget .table th {
+    font-weight: 500;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background: var(--primary);
+}
+
+.bootstrap-datetimepicker-widget table td.today::before {
+    border-bottom-color: var(--primary);
+}
+
+
+/*** Testimonial ***/
+.progress .progress-bar {
+    width: 0px;
+    transition: 2s;
+}
+
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 5px solid var(--primary);
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--dark);
+    border-color: var(--primary);
+}
+
+/* === GENERAL === */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+}
+
+.online-status {
+  background-color: #28a745;
+  border: 2px solid white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.msg-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* === TABLA DE PAGOS === */
+.pagos-table {
+  color: white;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.pagos-table thead {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.pagos-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.pagos-table th,
+.pagos-table td {
+  background-color: #6f7279 !important;
+  vertical-align: middle;
+  
+}
+
+.pagos-table .btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.pagos-table .btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* === FULLCALENDAR === */
+.fc {
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 8px;
+}
+
+.fc-toolbar-title {
+  color: white;
+}
+
+.fc-button {
+  background-color: #0d6efd !important;
+  border: none !important;
+}
+
+.fc-button:hover {
+  background-color: #0b5ed7 !important;
+}
+
+/* === NAVBAR === */
+.navbar .dropdown-menu {
+  border-radius: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(21 22 22) !important;
+}
+
+.pagos-section {
+  background-color: rgb(21 22 22) !important; /* color de fondo oscuro */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.pagos-section h5 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.pagos-table thead {
+  background-color: #0d6efd;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.pagos-table tbody {
+  color: #f0f0f0;
+}
+
+.pagos-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: background-color 0.3s ease;
+}
+
+.pagos-table td,
+.pagos-table th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.pagos-table .btn {
+  border-radius: 6px;
+}
+
+.pagos-table .badge {
+  font-size: 0.85rem;
+}
+
+/* Botón del nombre de producto en la tabla */
+.producto-nombre-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #000000;       
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.producto-nombre-btn:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* === PERSONALIZACIÓN DEL MODAL === */
+.modal-custom .modal-content {
+  background-color: #23242f !important;
+  color: white !important;
+  border: 1px solid #3a3b45;
+}
+
+/* Título */
+.modal-custom .modal-header,
+.modal-custom .modal-footer {
+  border-color: #3a3b45 !important;
+}
+
+.modal-custom .modal-title {
+  color: white !important;
+}
+
+/* Botón cerrar */
+.modal-custom .btn-close {
+  filter: brightness(0) invert(1); /* lo vuelve blanco */
+}
+
+/* Inputs */
+.modal-custom .form-control,
+.modal-custom textarea {
+  background-color: #2f303b !important;
+  color: white !important;
+  border: 1px solid #555 !important;
+}
+
+.modal-custom .form-control:focus,
+.modal-custom textarea:focus {
+  background-color: #2f303b !important;
+  color: white !important;
+  border-color: #0d6efd !important;
+  box-shadow: none;
+}
+
+/* Dropdown */
+.modal-custom .form-select {
+  background-color: #2f303b !important;
+  color: white !important;
+  border: 1px solid #555 !important;
+}
+
+.modal-custom .form-select option {
+  background-color: #23242f;
+  color: white;
+}
+
+/* Textos de error */
+.modal-custom .text-danger {
+  color: #ff6b6b !important;
+}
+

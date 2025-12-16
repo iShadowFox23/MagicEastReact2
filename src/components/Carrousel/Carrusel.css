@@ -1,0 +1,258 @@
+/* Contenedor principal del slider */
+.slider-container2 {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #161727;
+}
+
+/* Espaciado entre slides */
+.slick-slide {
+  padding: 0 12px;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
+/* Cada item del slider */
+.slick-slide > div > div {
+  background: #161727;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slick-slide > div > div:hover {
+  box-shadow: 0 8px 20px #1617271e;
+  transform: translateY(-5px);
+}
+
+/* Cuerpo del producto */
+.product-body {
+  padding: 20px;
+  order: 2; 
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Imagen del producto */
+.slick-slide img {
+  width: 90%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  order: 1;
+  transition: transform 0.5s ease;
+}
+
+.slick-slide > div > div:hover img {
+  transform: scale(1.08);
+}
+
+/* Categoría del producto */
+.product-category {
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Nombre del producto */
+.product-name {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 45px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.product-name a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.product-name a:hover {
+  color: #0d6efd;
+}
+
+/* Precios */
+.product-price {
+  margin: 8px 0 0 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #212529;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-old-price {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+/* Dots de navegación */
+.slider-container .slick-dots {
+  bottom: -40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.slider-container .slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+
+.slider-container .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+}
+
+.slider-container .slick-dots li button:before {
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #0d6efd;
+  opacity: 0.3;
+}
+
+.slider-container .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #0d6efd;
+  transform: scale(1.3);
+}
+
+/* Flechas de navegación siempre iguales */
+.slider-container .slick-arrow {
+  width: 45px;
+  height: 45px;
+  background: rgb(0, 0, 0) !important; 
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  transition: none;
+}
+
+.slider-container .slick-arrow:before {
+  color: white !important; 
+  font-size: 22px;
+  opacity: 1;
+}
+
+.slider-container .slick-arrow:hover,
+.slider-container .slick-arrow:focus,
+.slider-container .slick-arrow:active {
+  background: rgb(0, 0, 0) !important; 
+}
+
+.slider-container .slick-arrow:hover:before,
+.slider-container .slick-arrow:focus:before,
+.slider-container .slick-arrow:active:before {
+  color: white !important; 
+}
+
+/* Posición de las flechas */
+.slider-container .slick-prev {
+  left: -22px;
+}
+
+.slider-container .slick-next {
+  right: -22px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .slider-container {
+    padding: 30px 15px;
+  }
+  
+  .slick-slide img {
+    height: 240px;
+  }
+  
+  .product-price {
+    font-size: 20px;
+  }
+  
+  .slider-container .slick-prev {
+    left: 10px;
+  }
+  
+  .slider-container .slick-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    padding: 20px 10px;
+  }
+  
+  .slick-slide {
+    padding: 0 8px;
+  }
+  
+  .slick-slide img {
+    height: 220px;
+  }
+  
+  .product-body {
+    padding: 15px;
+  }
+  
+  .product-name {
+    font-size: 14px;
+    min-height: 40px;
+  }
+  
+  .product-price {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slick-slide img {
+    height: 200px;
+  }
+  
+  .product-body {
+    padding: 12px;
+  }
+  
+  .product-category {
+    font-size: 11px;
+  }
+  
+  .product-name {
+    font-size: 13px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+  }
+  
+  .product-old-price {
+    font-size: 14px;
+  }
+}

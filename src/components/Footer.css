@@ -1,0 +1,80 @@
+/* ===== FOOTER ===== */
+
+#footer {
+  background: #15161D;
+  color: #B9BABC;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal del footer */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Cada columna */
+.footer {
+  flex: 1 1 250px; 
+  min-width: 200px;
+}
+
+.footer .footer-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Enlaces */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li + li {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #B9BABC;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff0000;
+}
+
+.footer-links i {
+  margin-right: 10px;
+  color: #ff0000;
+}
+
+
+@media (max-width: 900px) {
+  .footer-container {
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex: 1 1 100%;
+  }
+}

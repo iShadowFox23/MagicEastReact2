@@ -1,0 +1,72 @@
+
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.hero__slider-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero__slider {
+  width: 100%;
+}
+
+
+.hero__slide {
+  outline: none;
+}
+
+.hero__items {
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 600px; 
+  background-position: center;
+  background-size: cover; 
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+.hero__slider .slick-prev,
+.hero__slider .slick-next {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.hero__slider .slick-prev:before,
+.hero__slider .slick-next:before {
+  color: white;
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+
+.hero__slider .slick-dots {
+  bottom: 15px;
+}
+
+.hero__slider .slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+  opacity: 0.6;
+}
+
+.hero__slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #ff4c60;
+}
+
+
+@media (max-width: 768px) {
+  .hero__items {
+    height: 300px;
+  }
+}

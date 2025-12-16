@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Caja de sobres Gundam",
+    "categoria": "Gundam",
+    "precio": 24990,
+    "precioAntiguo": 26000,
+    "imagen": "/images/GQuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuX.jpg",
+    "descripcion": "Caja de sobres de colección Gundam, ideal para fans y coleccionistas."
+  },
+  {
+    "id": 2,
+    "nombre": "Gundam Booster packs",
+    "categoria": "Gundam",
+    "precio": 29990,
+    "precioAntiguo": 31000,
+    "imagen": "/images/gundaaaaaaaaaam.jpg",
+    "descripcion": "Caja de sobres de colección Gundam"
+  },
+  {
+    "id": 3,
+    "nombre": "Gundam Assemble Kit",
+    "categoria": "Gundam",
+    "precio": 32990,
+    "precioAntiguo": 34000,
+    "imagen": "/images/gundam assemble.jpg",
+    "descripcion": "Kit de ensamblaje Gundam con piezas detalladas y manual de armado."
+  },
+  {
+    "id": 4,
+    "nombre": "Gundam RX-78-2",
+    "categoria": "Gundam",
+    "precio": 34990,
+    "precioAntiguo": 36000,
+    "imagen": "/images/Gundam.jpg",
+    "descripcion": "Figura clásica Gundam RX-78-2, edición especial para coleccionistas."
+  }
+]

@@ -1,0 +1,53 @@
+.scryfall-catalogo-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.scryfall-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 2.5rem;
+}
+
+.scryfall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.scryfall-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border-radius: 4.75% / 3.5%; /* Approximate MTG card corner radius */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.scryfall-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(255, 255, 255, 0.2);
+  z-index: 10;
+}
+
+.scryfall-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.loading-container, .error-container {
+  text-align: center;
+  padding: 4rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.error-container {
+  color: #ff6b6b;
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "Endless Punishment",
+    "categoria": "Mazo preconstruido",
+    "precio": 23990,
+    "precioAntiguo": 25000,
+    "imagen": "/images/EndlessPunishment.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Scions and Spellcraft Precon",
+    "categoria": "Mazo preconstruido",
+    "precio": 24990,
+    "precioAntiguo": 26000,
+    "imagen": "/images/Y'shtola.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Miracle Worker",
+    "categoria": "Mazo preconstruido",
+    "precio": 22990,
+    "precioAntiguo": 24000,
+    "imagen": "/images/miracle.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Bundle Final Fantasy",
+    "categoria": "Mazo preconstruido",
+    "precio": 19990,
+    "precioAntiguo": 21000,
+    "imagen": "/images/ffbundle.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Magic: The gathering Dungeons and Dragons set",
+    "categoria": "Draft Booster",
+    "precio": 27990,
+    "precioAntiguo": 29000,
+    "imagen": "/images/dnd.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Squirreled Away Bloomburrow",
+    "categoria": "Mazo preconstruido",
+    "precio": 24990,
+    "precioAntiguo": 26000,
+    "imagen": "/images/precon7.webp"
+  }
+]

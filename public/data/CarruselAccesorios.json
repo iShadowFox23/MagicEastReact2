@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nombre": "Carpeta Ultra Pro Mana 8 Mountain",
+    "categoria": "Accesorios",
+    "precio": 12990,
+    "precioAntiguo": 14000,
+    "imagen": "/images/carpeta-ultra-pro-mana-8-mountain-for-magic-12-pocket.jpg",
+    "descripcion": "Carpeta Ultra Pro para Magic: The Gathering, 12 bolsillos, ideal para proteger tus cartas."
+  },
+  {
+    "id": 2,
+    "nombre": "Dados Role 4 Initiative",
+    "categoria": "Accesorios",
+    "precio": 23990,
+    "precioAntiguo": 25000,
+    "imagen": "/images/dados.jpg",
+    "descripcion": "Set de dados y contadores para juegos de rol, perfectos para tus partidas."
+  },
+  {
+    "id": 3,
+    "nombre": "Deckholder",
+    "categoria": "Accesorios",
+    "precio": 10990,
+    "precioAntiguo": 12000,
+    "imagen": "/images/Deckholder.jpg",
+    "descripcion": "Porta mazos Deckholder, mantiene tus cartas organizadas y seguras."
+  },
+  {
+    "id": 4,
+    "nombre": "Portamazo",
+    "categoria": "Accesorios",
+    "precio": 11990,
+    "precioAntiguo": 13000,
+    "imagen": "/images/portamazo.jpg",
+    "descripcion": "Portamazo resistente y práctico para llevar tus cartas a todas partes."
+  },
+  {
+    "id": 5,
+    "nombre": "Spongebob Card Sleeve",
+    "categoria": "Accesorios",
+    "precio": 9990,
+    "precioAntiguo": 11000,
+    "imagen": "/images/spongebob.png",
+    "descripcion": "Fundas para cartas con diseño de Spongebob, protege tus cartas favoritas."
+  },
+  {
+    "id": 6,
+    "nombre": "Sleeve Protector",
+    "categoria": "Accesorios",
+    "precio": 8990,
+    "precioAntiguo": 9500,
+    "imagen": "/images/Sleeve.jpg",
+    "descripcion": "Fundas protectoras para cartas estándar, resistente y duradera."
+  }
+]

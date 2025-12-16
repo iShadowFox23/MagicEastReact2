@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "nombre": "Spiderman Booster Pack Box",
+    "categoria": "Booster Packs",
+    "precio": 246990,
+    "precioAntiguo": 260000,
+    "descuento": 5,
+    "imagen": "/images/spoderman.jpg",
+    "descripcion": "Spiderman Booster Pack Box"
+  },
+  {
+    "id": 2,
+    "nombre": "MTG Caja de Collector Boosters - Marvel's Spider-Man",
+    "categoria": "Booster Packs",
+    "precio": 246990,
+    "precioAntiguo": 260000,
+    "descuento": 5,
+    "imagen": "/images/mtg-caja-de-collector-boosters-marvel-s-spider-man-chile.png",
+    "descripcion": "Caja de sobres de colección de Magic: The Gathering con arte exclusivo de Marvel’s Spider-Man."
+  },
+  {
+    "id": 3,
+    "nombre": "Mazo starter RX-78-2",
+    "categoria": "Estructura de Mazo",
+    "precio": 89990,
+    "precioAntiguo": 95000,
+    "descuento": 5,
+    "imagen": "/images/Gundam.jpg",
+    "descripcion": "Modelo clásico del Gundam RX-78-2, con piezas detalladas y articulación completa para exposición."
+  },
+  {
+    "id": 4,
+    "nombre": "Sobres Booster Pack GQX - Edición Premium",
+    "categoria": "Booster Pack",
+    "precio": 129990,
+    "precioAntiguo": 136800,
+    "descuento": 5,
+    "imagen": "/images/GQuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuX.jpg",
+    "descripcion": "Figura premium GQX con acabados de alta calidad, edición limitada para coleccionistas."
+  },
+  {
+    "id": 5,
+    "nombre": "Endless Punishment - Mazo Preconstruido",
+    "categoria": "Mazo Preconstruido",
+    "precio": 109990,
+    "precioAntiguo": 115790,
+    "descuento": 5,
+    "imagen": "/images/EndlessPunishment.jpg",
+    "descripcion": "Figura detallada de Endless Punishment, con materiales de alta durabilidad y base decorativa."
+  }
+]

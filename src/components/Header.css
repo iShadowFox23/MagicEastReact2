@@ -1,0 +1,266 @@
+/* === HEADER TOP === */
+#top-header {
+  background-color: #111;
+  padding: 10px 0;
+  color: white;
+  font-size: 14px;
+}
+
+.topHeader {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header-links a,
+.header-links span {
+  color: white;
+  text-decoration: none;
+}
+
+.logout-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* === HEADER PRINCIPAL === */
+#header {
+  background-color: #070720;
+  padding: 10px 0;
+  font-family: sans-serif;
+  border-bottom: 1px solid #070720;
+  position: relative;
+  z-index: 999;
+}
+
+.header-container {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* === LOGO === */
+.header-logo .logo-text {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header-logo .magic {
+  color: white;
+}
+
+.header-logo .west {
+  color: #ff0000;
+}
+
+/* === SEARCH BAR === */
+.header-search form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+  /* Limitar ancho en pantallas grandes */
+}
+
+.header-search {
+  flex: 1;
+  /* Permitir que el contenedor crezca/encoja */
+  display: flex;
+  justify-content: center;
+  /* Centrar el formulario */
+}
+
+
+.input {
+  flex: 1;
+  /* Permitir que el input llene el espacio disponible */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 40px;
+  font-size: 0.9rem;
+  min-width: 0;
+  /* Arregla desbordamiento en flex items */
+}
+
+.search-btn {
+  background-color: #ff0000 !important;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 40px;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #c40000 !important;
+}
+
+.cart-qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-btn {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.qty-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.qty-value {
+  min-width: 20px;
+  text-align: center;
+}
+
+.btn-delete {
+  background: #d9534f;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #c9302c;
+}
+
+.stock-alert {
+  color: #ffcc00;
+  font-size: 11px;
+}
+
+/* === CARRITO === */
+.cart-container {
+  position: relative;
+}
+
+.cart-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+}
+
+.cart-toggle:hover {
+  color: #ff0000;
+}
+
+/* === DROPDOWN === */
+.cart-dropdown {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: 320px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0s linear 0.25s;
+}
+
+.cart-container:hover .cart-dropdown,
+.cart-container.open .cart-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+/* === Items del carrito === */
+.cart-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #efefef;
+}
+
+.cart-item-img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* === TOTAL === */
+.cart-total {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* === BOTÓN DE COMPRA === */
+.cart-checkout {
+  margin-top: 12px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.25s ease;
+}
+
+.cart-checkout:hover {
+  background-color: #c40000;
+}
