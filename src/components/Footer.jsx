@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; 
+import './Footer.css';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -21,10 +21,10 @@ function Footer() {
             <h3 className="footer-title">Categorías</h3>
             <ul className="footer-links">
               <li><a href="#">Ofertas</a></li>
-              <li><Link to ="/catalogo">Mazos</Link></li>
+              <li><Link to="/catalogo">Mazos</Link></li>
               <li><a href="#">Sobres</a></li>
               <li><a href="#">Eventos</a></li>
-              <li><a href="#">Accesorios</a></li>
+              <li><a href="#">Version 2</a></li>
             </ul>
           </div>
 
@@ -43,7 +43,7 @@ function Footer() {
             <h3 className="footer-title">Servicios</h3>
             <ul className="footer-links">
               <li><Link to="/login" >Mi cuenta</Link></li>
-              <li><Link to ="/Producto">Ver carrito</Link></li>
+              <li><Link to="/Producto">Ver carrito</Link></li>
               <li><a href="#">Seguimiento del pedido</a></li>
               <li><a href="#">Soporte</a></li>
             </ul>
